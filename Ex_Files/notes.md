@@ -36,5 +36,7 @@ For examples see [02_04_begin](02_04_begin/main.py)
 - For loops are used more often than while loops as they are less prone to endless looping
 
 ## Logic (if/elif/else) - 02_05_begin
+For examples, see [02_05_begin](02_05_begin/main.py)
 
 - `import os` - Python has a built-in os module with methods for interacting with the operating system, like creating files and directories, management of files and directories, input, output, environment variables, process management, etc.
+- You can change an environment variable in the terminal, just by using `export variable_name='value'`
