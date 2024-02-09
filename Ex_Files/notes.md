@@ -35,8 +35,32 @@ For examples see [02_04_begin](02_04_begin/main.py)
 - Using f in a print statement before a string lets the program know that anything inside of braces should be treated as a variable
 - For loops are used more often than while loops as they are less prone to endless looping
 
-## Logic (if/elif/else) - 02_05_begin
+## Logic (if/elif/else) - 02_05
 For examples, see [02_05_begin](02_05_begin/main.py)
 
 - `import os` - Python has a built-in os module with methods for interacting with the operating system, like creating files and directories, management of files and directories, input, output, environment variables, process management, etc.
 - You can change an environment variable in the terminal, just by using `export variable_name='value'`
+
+## CSV - 03_01
+For examples, see [03_01_begin](03_01_begin/main.py)
+
+- `csv` module helps handle CSV files
+- `pprint` helps output to the console be better formatted and more readable
+- CSV is better for customers than for development
+- Format of key value pairs is similar to JS, but it requires double quotes around both key and pair
+
+```
+with open("laureates.csv", "r") as f:
+  reader = csv.DictReader(f)
+  laureates = list(reader)
+
+```
+- `with` handles both the opening and closing of the file specified
+- `r` specifies that it should be read only mode, so no changes will be made to the file
+- `f` is now what the file is called
+- The file is read, then a list called `laureates` is created using the information that was copied to `reader`
+  - This list can be used outside of the code block
+- The for loop looks through each item in the list `laureates`, checks the surname, and prints out the laureate if the surname is "Einstein"
+  - Once the surname "Einstein" is found it breaks out of the loop
+
+
