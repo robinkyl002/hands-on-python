@@ -14,7 +14,7 @@ For examples see [02_02_begin](02_02_begin/main.py)
 - `sum()` function adds together all of the items in the list and returns the total (As expected, only works on numbers)
 
 ### Accessing part of a list
-For examples, see [02_03_begin](02_03_begin/main.py)
+For examples see [02_03_begin](02_03_begin/main.py)
 
 - If you **just want a section of a list**, use the index of the first item, then the index of the item after the last item you want (i.e. `NAMES[2:6]` for items at indexes 2, 3, 4, and 5)
 - If you want everything from the **start of the list up to a certain index**, just put a colon and then the index after the last item you want (i.e. `NAMES[:5]` for items through index 4)
@@ -36,13 +36,13 @@ For examples see [02_04_begin](02_04_begin/main.py)
 - For loops are used more often than while loops as they are less prone to endless looping
 
 ## Logic (if/elif/else) - 02_05
-For examples, see [02_05_begin](02_05_begin/main.py)
+For examples see [02_05_begin](02_05_begin/main.py)
 
 - `import os` - Python has a built-in os module with methods for interacting with the operating system, like creating files and directories, management of files and directories, input, output, environment variables, process management, etc.
 - You can change an environment variable in the terminal, just by using `export variable_name='value'`
 
 ## CSV - 03_01
-For examples, see [03_01_begin](03_01_begin/main.py)
+For examples see [03_01_begin](03_01_begin/main.py)
 
 - `csv` module helps handle CSV files
 - `pprint` helps output to the console be better formatted and more readable
@@ -63,4 +63,9 @@ with open("laureates.csv", "r") as f:
 - The for loop looks through each item in the list `laureates`, checks the surname, and prints out the laureate if the surname is "Einstein"
   - Once the surname "Einstein" is found it breaks out of the loop
 
+## Making Calculations - 03_02
+For examples see [03_02_begin](03_02_begin/main.py)
+
+- `datetime` creates data structures that allow you to find out things like how old a laureate would have been when they received their prize
+- The file finds Einstein, prints out all of the info on him, then goes through the data to find when he received the prize, and his birthdate, subtracts the years and returns the age
 
