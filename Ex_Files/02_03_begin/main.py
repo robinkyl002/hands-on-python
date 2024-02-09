@@ -17,6 +17,7 @@ EVERY_OTHER = NAMES[::2]
 
 # Sum of all items in "AGES" list
 print(sum(AGES))
+print(max(HEROES))
 # Smallest of all items in "AGES" list
 print(min(AGES))
 # Largest of all items in "AGES" list
