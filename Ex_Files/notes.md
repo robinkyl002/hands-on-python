@@ -79,7 +79,7 @@ For examples see [03_03_begin](03_03_begin/main.py)
 - `pprint` just modifies how the output looks when printed to the console. 
 - the first `with` code block essentially creates a list of Python dictionaries that is named laureates, so that allows us to convert it easily to JSON in the next code block
 - `w` in the next code block tells the system that you will be writing to the JSON file
-- when dealing with whole files, use `json.dump()` and `json.load()` both without the "s" at the end
+- when dealing with files, use `json.dump()` and `json.load()` both without the "s" at the end
 
 ## Challenge - 03_04
 Link to the code: [03_04](03_04/main.py)
@@ -90,9 +90,28 @@ Link to the code: [03_04](03_04/main.py)
 For examples see [04_01_begin](04_01_begin/main.py)
 
 - using the `requests` module requires installing it using pip
+  - installing outside of codespace -- `python3 -m pip install requests`
 - python allows you to multiply strings
 
 ## Extending a small web server - 04_02
 For examples see [04_02_begin](04_02_begin/main.py)
+More complex file [here](04_02_begin/app.py)
 
-- 
+### main.py
+- Flask helps access things on the web
+- installing flask outside of codespace -- `python3 -m pip install Flask`
+- When using Flask, make sure you use the correct line to import it -- `from flask import Flask`
+- Always start by instantiating a Flask object passing in __name__ (i.e. `app = Flask(__name__)`)
+- double underscore in Python is called dunderscore
+- use `app.route("route")` to set the appropriate routes
+- Line `app.run(debug=True)` tells it to run it in debug mode when the code is run.
+
+### app.py
+- `render_template` function allows you to bring in an HTML file
+- `jsonify` converts datasets to JSON
+
+## Searching through data - 04_03
+For examples see [04_03_begin](04_03_begin/main.py)
+
+## Challenge - 04_04
+Link to the code: [04_04](04_04/app.py)
