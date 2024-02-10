@@ -80,3 +80,8 @@ For examples see [03_03_begin](03_03_begin/main.py)
 - the first `with` code block essentially creates a list of Python dictionaries that is named laureates, so that allows us to convert it easily to JSON in the next code block
 - `w` in the next code block tells the system that you will be writing to the JSON file
 - when dealing with whole files, use `json.dump()` and `json.load()` both without the "s" at the end
+
+## Challenge - 03_04
+Link to the code: [03_04](03_04/main.py)
+
+- Access the value in a key-value pair from a dictionary using the following syntax `dictionary_name["key"]`
