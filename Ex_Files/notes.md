@@ -85,3 +85,14 @@ For examples see [03_03_begin](03_03_begin/main.py)
 Link to the code: [03_04](03_04/main.py)
 
 - Access the value in a key-value pair from a dictionary using the following syntax `dictionary_name["key"]`
+
+## Loading a JSON dataset - 04_01
+For examples see [04_01_begin](04_01_begin/main.py)
+
+- using the `requests` module requires installing it using pip
+- python allows you to multiply strings
+
+## Extending a small web server - 04_02
+For examples see [04_02_begin](04_02_begin/main.py)
+
+- 
