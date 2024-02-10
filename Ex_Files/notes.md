@@ -69,3 +69,14 @@ For examples see [03_02_begin](03_02_begin/main.py)
 - `datetime` creates data structures that allow you to find out things like how old a laureate would have been when they received their prize
 - The file finds Einstein, prints out all of the info on him, then goes through the data to find when he received the prize, and his birthdate, subtracts the years and returns the age
 
+## Outputting JSON - 03_03
+For examples see [03_03_begin](03_03_begin/main.py)
+
+- use `json` module to allow for handling JSON
+- JSON is used more widely than CSV for everything except spreadsheets
+- `json.dumps()` takes a dictionary and turns it into a JSON string
+- `json.loads` takes the JSON string and turns it back into a dictionary
+- `pprint` just modifies how the output looks when printed to the console. 
+- the first `with` code block essentially creates a list of Python dictionaries that is named laureates, so that allows us to convert it easily to JSON in the next code block
+- `w` in the next code block tells the system that you will be writing to the JSON file
+- when dealing with whole files, use `json.dump()` and `json.load()` both without the "s" at the end

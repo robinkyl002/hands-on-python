@@ -11,6 +11,8 @@ EINSTEIN = {
     "motivation": "for his services to Theoretical Physics...",
 }
 
+print(EINSTEIN)
+pprint(EINSTEIN)
 einstein_json = json.dumps(EINSTEIN)
 back_to_dict = json.loads(einstein_json)
 print(einstein_json)
