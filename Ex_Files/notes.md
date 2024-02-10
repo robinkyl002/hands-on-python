@@ -111,7 +111,13 @@ More complex file [here](04_02_begin/app.py)
 - `jsonify` converts datasets to JSON
 
 ## Searching through data - 04_03
-For examples see [04_03_begin](04_03_begin/main.py)
+For examples see [04_03_begin](04_03_begin/app.py)
+
+- The code on lines 22 and 23 will return an empty list if there is no surname that comes from the request
+- line 26 takes what has been typed in, makes it lower case and sets it equal to the variable
+- the rest of the code goes through the list provided, compares the searched string to surnames in the list and if the surname contains that string, it is added to the results that are returned
 
 ## Challenge - 04_04
 Link to the code: [04_04](04_04/app.py)
+
+
